@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --bg-dark: #0a090f;
+  --text-light: #f7f7f7;
+  --accent-lavender: #b18cd9;
+  --accent-blush: #ff8bb3;
+  --accent-rose: #e4b6d0;
+  --border-soft: rgba(255, 255, 255, 0.1);
+  --button-hover: #ffaad0;
+  --shadow-glow: 0 0 12px rgba(255, 139, 179, 0.3);
+}
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 95%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0;
+  padding: 36px;
+  margin-top: 60px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.04), var(--shadow-glow);
+  -webkit-backdrop-filter: blur(3px); /* For Safari support */
+  backdrop-filter: blur(3px);
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: normal;
+  color: var(--accent-blush);
+  text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#customTitle {
+  font-size: 2.2em;                /* smaller than the main h1 */
+  font-weight: normal;
+  color: var(--text-light);        /* white color */
+  margin-top: -40px;               /* pull it upward closer to the first h1 */
+  margin-bottom: 28px;
+  border: none;                    /* no border below */
+  padding-bottom: 0;
+  letter-spacing: 1px;
+  text-transform: none;
+  text-align: center;
+}
+
+
+label {
+  font-weight: bold;
+  color: var(--accent-rose);
+  display: block;
+  margin-bottom: 6px;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.form-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+input[type="date"] {
+  background-color: #1e1b28;
+  color: var(--text-light);
+  border: 2px solid var(--accent-lavender);
+  padding: 10px;
+  border-radius: 0;
+  font-size: 1rem;
+  width: 250px;
+  max-width: 100%;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: var(--accent-blush);
+  box-shadow: 0 0 8px var(--accent-blush);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid var(--accent-blush);
+  color: var(--accent-blush);
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  color: var(--bg-dark);
+  box-shadow: 0 0 10px var(--button-hover);
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+img, iframe {
+  width: 100%;
+  margin-top: 25px;
+  max-height: 500px;
+  border-radius: 0;
+  border: 2px solid var(--accent-rose);
+  box-shadow: 0 0 20px rgba(225, 185, 215, 0.2);
+}
+
+#output {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+a[target="_blank"], a[download] {
+  background-color: transparent;
+  border: 2px solid var(--accent-lavender);
+  color: var(--accent-lavender);
+  padding: 10px 16px;
+  border-radius: 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+a[target="_blank"]:hover, a[download]:hover {
+  background-color: var(--accent-lavender);
+  color: var(--bg-dark);
+  box-shadow: 0 0 12px var(--accent-lavender);
+}
+
+.error {
+  color: #ff607a;
+  font-weight: bold;
+  margin-top: 20px;
+  text-shadow: 0 0 6px #ff607a;
+  text-align: center;
+}

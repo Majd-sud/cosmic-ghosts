@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cosmic Ghosts - NASA Pics of the date</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cosmic Ghosts</h1>
+<h1 id="customTitle">NASA pic of the day!</h1>
+    <form id="apodForm">
+      <label for="date">Choose a Date:</label>
+      <div class="form-controls">
+        <input type="date" id="date" max="" />
+        <button type="submit" id="searchBtn">Get Picture</button>
+      </div>
+    </form>
+
+    <div class="button-row">
+      <button type="button" id="randomBtn">Random Date</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
